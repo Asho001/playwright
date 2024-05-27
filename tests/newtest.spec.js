@@ -13,5 +13,6 @@ test('test', async ({ page }) => {
   await page.getByRole('cell', { name: 'Client' }).locator('label').click();
   await page.getByTitle('-- Select Client --').click();
   await page.getByRole('treeitem', { name: '05NDL / Gillette India Ltd...' }).click();
+  
   await page.close()
 });

@@ -16,7 +16,6 @@ test('test', async ({ page }) => {
   await page.locator('#select2-AlcsContentPlaceHolder_ddlState-container').click();
   await page.getByRole('treeitem', { name: 'Goa' }).click();
   await page.locator('#select2-AlcsContentPlaceHolder_ddlIndustryType-container').click();
-  
   await page.getByRole('treeitem', { name: 'Pharmaceutical Industry' }).click();
   await page.getByRole('treeitem', { name: 'Aldana' }).click();
   await page.goto('http://alcsaws.teamlease.com//GUI/Associate/SalaryCalculator.aspx');
